@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0">
+    <!--Index page-->
+    <servlet>
+        <servlet-name>MyServlet</servlet-name>
+        <servlet-class>main.java.Servlets.GetIndexPageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>MyServlet</servlet-name>
+        <url-pattern>/index</url-pattern>
+    </servlet-mapping>
+  <!--addition user-->
+    <servlet>
+        <servlet-name>AddUserServlet</servlet-name>
+        <servlet-class>main.java.Servlets.AddUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUserServlet</servlet-name>
+        <url-pattern>/add_user</url-pattern>
+    </servlet-mapping>
+    <!--removing user-->
+    <servlet>
+        <servlet-name>RemoveUser</servlet-name>
+        <servlet-class>main.java.Servlets.RemuveUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>RemoveUser</servlet-name>
+        <url-pattern>/delete</url-pattern>
+    </servlet-mapping>
+    <!--update user-->
+    <servlet>
+        <servlet-name>UpdateUser</servlet-name>
+        <servlet-class>main.java.Servlets.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUser</servlet-name>
+        <url-pattern>/update</url-pattern>
+    </servlet-mapping>
+
+</web-app>
