@@ -1,18 +1,13 @@
 package main.java.DAO;
 
 public class User {
-    private int id;
-
     private String name;
 
     private int age;
 
-    public User(int id, String name, int age) {
+    public User(String name, int age) {
         this.name = name;
         this.age = age;
-    }
-
-    public User() {
     }
 
     public String getName() {
@@ -25,14 +20,6 @@ public class User {
 
     public int getAge() {
         return age;
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
     }
 
     public void setAge(int age) {

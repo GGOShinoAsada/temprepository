@@ -49,7 +49,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -185,7 +185,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607375188676</updated>
-      <workItem from="1607375198308" duration="12927000" />
+      <workItem from="1607375198308" duration="15780000" />
     </task>
     <servers />
   </component>

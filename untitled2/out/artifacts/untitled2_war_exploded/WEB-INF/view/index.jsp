@@ -2,11 +2,12 @@
   Created by IntelliJ IDEA.
   User: roman
   Date: 08.12.2020
-  Time: 13:45
+  Time: 15:57
   To change this template use File | Settings | File Templates.
 --%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page contentType="text/html;charset=UTF-8" %>
 <html>
 <head>
     <title>Title</title>
@@ -24,16 +25,6 @@
         <li>Имя: <c:out value="${user.name}"/></li>
 
         <li>Возраст: <c:out value="${user.age}"/></li>
-
-        <form method="post" action="<c:url value='/delete'/>">
-            <input type="number" hidden name="id" value="${user.id}" />
-            <input type="submit" name="delete" value="Удалить"/>
-        </form>
-
-        <form method="get" action="<c:url value='/update'/>">
-            <input type="number" hidden name="id" value="${user.id}" />
-            <input type="submit" value="Редактированть"/>
-        </form>
     </ul>
     <hr />
 
@@ -41,7 +32,7 @@
 
 <h2>Создание нового пользователя</h2><br />
 
-<form method="post" action="<c:url value='/add_user'/>">
+<form method="post" action="">
 
     <label><input type="text" name="name"></label>Имя<br>
 
