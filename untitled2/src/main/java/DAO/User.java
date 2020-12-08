@@ -1,10 +1,16 @@
 package main.java.DAO;
 
 public class User {
+    private  int Id;
     private String name;
 
     private int age;
-
+    private void setId(int id){
+        Id=id;
+    }
+    public int getId(){
+        return Id;
+    }
     public User(String name, int age) {
         this.name = name;
         this.age = age;
