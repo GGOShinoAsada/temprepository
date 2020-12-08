@@ -11,40 +11,46 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.concurrent.CopyOnWriteArrayList;
 
 @WebServlet(name = "GetIndexPageServlet")
 public class GetIndexPageServlet extends HttpServlet {
-    private Map<Integer, User> users;
+    private List<User> UserList;
     private  final static String index = "/WEB-INF/view/index.jsp";
     @Override
     public void init() throws ServletException {
-
-        final Object _users = getServletContext().getAttribute("users");
-
-        users.values().addAll((List<User>)_users);
-
-        /*if (_users == null || !(_users instanceof ConcurrentHashMap)) {
-
-           throw new IllegalStateException("You're repo does not initialize!");
-       } else {
-
-            this.users = (ConcurrentHashMap<Integer, User>) users;
-        }*/
-
-
+        //add all users
+        UserList = new CopyOnWriteArrayList<>();
+        UserList.add(new User("Tom",14));
+        UserList.add(new User("Tas",45));
+        UserList.add(new User("ASD",65));
     }
-
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute("users", users.values());
-        req.getRequestDispatcher("/WEB-INF/view/index.jsp").forward(req, resp);
-
+        req.setAttribute("users",UserList);
+        req.getRequestDispatcher(index).forward(req,resp);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+        request.setCharacterEncoding("UTF-8");
+        if (!requestIsValid(request)) {
+            doGet(request, response);
+        }
+        final String name = request.getParameter("name");
+        final String age = request.getParameter("age");
+        final User user = new User(name, Integer.valueOf(age));
+        UserList.add(user);
+        doGet(request, response);
 
+    }
+    private boolean requestIsValid(final HttpServletRequest req) {
 
+        final String name = req.getParameter("name");
+        final String age = req.getParameter("age");
 
+        return name != null && name.length() > 0 &&
+                age != null && age.length() > 0 &&
+                age.matches("[+]?\\d+");
     }
 }
