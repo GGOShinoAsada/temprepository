@@ -35,6 +35,7 @@ public class Context {
             return "jdbc:mysql://localhost:3306/"+ DatabaseName +"?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         }
     }
+
     private ConnectionProperties connection;
     private Connection MyDbConnection;
     private Statement StaticStatement;
@@ -231,5 +232,17 @@ public class Context {
             }
         }
         return Categories;
+    }
+    public boolean isconnectsuccessful(){
+        boolean issucc = true;
+        ConnectionProperties properties = new ConnectionProperties();
+        try{
+            MyDbConnection= DriverManager.getConnection("jdbc:mysql:3306//localhost/computerstore?useSSL=false;useUnicode=true;useJDBCCompliantTimezoneShift=true;useLegacyDatetimeCode=false;serverTimezone=UTC","root","0000");
+        }
+        catch (SQLException ex){
+            issucc=false;
+            ex.printStackTrace();
+        }
+        return issucc;
     }
 }

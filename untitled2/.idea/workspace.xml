@@ -6,7 +6,43 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="189af51a-e888-45f9-bc83-aefa3e28e39b" name="Default Changelist" comment="" />
+    <list default="true" id="189af51a-e888-45f9-bc83-aefa3e28e39b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_tomcat_8_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_javax_servlet_api_4_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mongo_java_driver_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_21.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_kevoree_modeling_org_kevoree_modeling_microframework_drivers_mongodb_4_26_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mongodb_mongo_java_driver_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/protobuf_java_3_11_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/untitled2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/untitled2/untitled2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/MongoContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/MongoServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d/storage_v2/_src_/schema/computerstore.prJrVQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d/storage_v2/_src_/schema/computerstore.prJrVQ.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Context.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/list.jsp" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,11 +85,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
-        <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -62,28 +101,38 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1lLT5RdGpg2tooXldZ34vnZjnSW" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/mongo-java-driver-2.1.jar!/" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Problems" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
@@ -206,6 +255,21 @@
       <item itemvalue="Tomcat Server.Tomcat 8.5.60" />
     </list>
   </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@d99ab4e3" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -216,11 +280,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1607375188676</updated>
-      <workItem from="1607375198308" duration="24466000" />
+      <workItem from="1607375198308" duration="34431000" />
+      <workItem from="1607687218102" duration="8929000" />
+      <workItem from="1607707708740" duration="5425000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

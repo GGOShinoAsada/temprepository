@@ -11,5 +11,13 @@
         <servlet-name>StatrServlet</servlet-name>
         <url-pattern>/index</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <servlet-class>main.java.Servlets.MongoServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CategoriesServlet</servlet-name>
+        <url-pattern>/catlist</url-pattern>
+    </servlet-mapping>
 
 </web-app>

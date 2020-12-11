@@ -6,9 +6,15 @@
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="untitled2" />
+          <element id="library" level="project" name="apache-tomcat-8.5" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="mysql:mysql-connector-java:8.0.21" />
+          <element id="library" level="project" name="org.kevoree.modeling:org.kevoree.modeling.microframework.drivers.mongodb:4.26.0" />
+          <element id="library" level="project" name="org.mongodb:mongo-java-driver:2.1" />
+          <element id="library" level="project" name="lib1" />
+          <element id="library" level="project" name="mongo-java-driver-2.1" />
         </element>
       </element>
     </root>

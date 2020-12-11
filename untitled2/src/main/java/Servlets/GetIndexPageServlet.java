@@ -57,10 +57,9 @@ public class GetIndexPageServlet extends HttpServlet {
         //check values
 
         final Category category = new Category(name, description, rating);
-      //  printvalies(category);
-       // var a = context.addCategory(category);
-       // System.out.println("dddddd"+a);
 
+        boolean issuc = context.isconnectsuccessful();
+        System.out.println("CONNECTION SUCCESSFUL: "+issuc);
         try{
            context.addCategory(category);
         }

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="org.kevoree.modeling:org.kevoree.modeling.microframework.drivers.mongodb:4.26.0" type="repository">
+    <properties maven-id="org.kevoree.modeling:org.kevoree.modeling.microframework.drivers.mongodb:4.26.0" />
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/org.kevoree.modeling.microframework.drivers.mongodb-4.26.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/org.kevoree.modeling.microframework-4.26.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/mongo-java-driver-3.0.1.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

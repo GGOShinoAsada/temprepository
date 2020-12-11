@@ -21,23 +21,19 @@
 
 <c:forEach var="category" items="${requestScope.Categories}">
     <ul>
-        <li>Name <c:out value="${category.Name}"/></li>
-        <li>Description <c:out value="${category.Description}"/></li>
-        <li>Rating: <c:out value="${category.Rating}"/></li>
+        <li>Name <c:out value="${category.name}"/></li>
+        <li>Description <c:out value="${category.description}"/></li>
+        <li>Rating: <c:out value="${category.rating}"/></li>
     </ul>
     <hr />
 
 </c:forEach>
 
 <h2>Создание новой категории</h2><br />
-
 <form method="post" action="">
-
-    <label><input type="text" name="name"></label>Name<br>
-
-    <label><input type="text" name="description"></label>Description<br>
-    <label><input type="number" name="rating"></label>Rating<br>
-
+    <label><input type="text" name="Name"></label>Name<br>
+    <label><input type="text" name="Description"></label>Description<br>
+    <label><input type="number" name="Rating"></label>Rating<br>
     <input type="submit" value="Ok" name="Ok"><br>
 </form>
 
