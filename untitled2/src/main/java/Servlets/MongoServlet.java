@@ -1,7 +1,9 @@
 package main.java.Servlets;
 
 
+import com.mongodb.MongoException;
 import main.java.DAO.Category;
+import main.java.DAO.MongoContext;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,16 +19,19 @@ import java.util.concurrent.CopyOnWriteArrayList;
 
 public class MongoServlet extends HttpServlet {
     private List<Category> Categories;
+    private MongoContext context = new MongoContext();
     private  String index = "/WEB-INF/view/index.jsp";
     @Override
     public void init() throws ServletException{
         Categories = new  CopyOnWriteArrayList<Category>();
-        Categories.addAll(Arrays.asList(
-                new Category(1,"Tim","This is a man",9.5),
-                new Category(2,"Tom","This is a man",8.4),
-                new Category(3,"Jimmi","this is a man",7.9),
-                new Category(4,"Jonny","This is a best man",8.5)
-        ));
+        //добавляем с использованием драйвера MongoDb
+        try{
+            Categories=context.getAllCategories();
+        }
+        catch (MongoException ex){
+            ex.printStackTrace();
+        }
+
 
     }
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

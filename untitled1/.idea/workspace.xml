@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90c95553-f768-4eee-aeff-1b018a801fa0" name="Default Changelist" comment="" />
+    <list default="true" id="90c95553-f768-4eee-aeff-1b018a801fa0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/src/main/java/DAO/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/src/main/java/DAO/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/out/production/untitled2/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/out/production/untitled2/main/java/DAO/Category.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/src/main/java/DAO/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/src/main/java/DAO/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/src/main/java/DAO/MongoContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/src/main/java/DAO/MongoContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../untitled2/src/main/java/Servlets/MongoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled2/src/main/java/Servlets/MongoServlet.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,6 +39,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
@@ -30,6 +54,7 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1lIAvPjFG6vqc6VO7PjFVz6iIjB" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -163,10 +188,22 @@
       <option name="presentableId" value="Default" />
       <updated>1607274461973</updated>
       <workItem from="1607274467626" duration="1171000" />
+      <workItem from="1608656721408" duration="41000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

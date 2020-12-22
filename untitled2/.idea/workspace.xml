@@ -7,41 +7,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189af51a-e888-45f9-bc83-aefa3e28e39b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/apache_tomcat_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_persistence.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/javax_servlet_javax_servlet_api_4_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/lib1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mongo_java_driver_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/mysql_mysql_connector_java_8_0_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_kevoree_modeling_org_kevoree_modeling_microframework_drivers_mongodb_4_26_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/org_mongodb_mongo_java_driver_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/protobuf_java_3_11_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/untitled2/untitled2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/DAO/MongoContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Servlets/MongoServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/src/main/java/DAO/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../untitled3/src/main/java/DAO/Context.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d/storage_v2/_src_/schema/computerstore.prJrVQ.zip" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d/storage_v2/_src_/schema/computerstore.prJrVQ.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/list.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Category.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/view/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/list.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/web/list.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/MongoContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/MongoContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/MongoServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/MongoServlet.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -282,8 +263,16 @@
       <updated>1607375188676</updated>
       <workItem from="1607375198308" duration="34431000" />
       <workItem from="1607687218102" duration="8929000" />
-      <workItem from="1607707708740" duration="5425000" />
+      <workItem from="1607707708740" duration="12057000" />
     </task>
+    <task id="LOCAL-00001" summary="start state">
+      <created>1607713397963</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607713397963</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -301,5 +290,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start state" />
+    <option name="LAST_COMMIT_MESSAGE" value="start state" />
   </component>
 </project>

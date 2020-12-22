@@ -33,7 +33,7 @@
 <form method="post" action="">
     <label><input type="text" name="Name"></label>Name<br>
     <label><input type="text" name="Description"></label>Description<br>
-    <label><input type="number" name="Rating"></label>Rating<br>
+    <label><input type="text" name="Rating"></label>Rating<br>
     <input type="submit" value="Ok" name="Ok"><br>
 </form>
 

@@ -1,7 +1,10 @@
 package main.java.DAO;
 
+import org.bson.Document;
 
-public class Category {
+
+public class Category extends Document {
+
     private int id;
     private String name;
     private String description;
