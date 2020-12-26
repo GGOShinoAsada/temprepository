@@ -51,7 +51,7 @@ public class GetIndexPageServlet extends HttpServlet {
         try{
              rating = Double.parseDouble(request.getParameter("rating"));
         }
-        catch (Exception ex){
+        catch (ClassCastException ex){
             System.out.println("rating "+ex.getMessage());
         }
         //check values
