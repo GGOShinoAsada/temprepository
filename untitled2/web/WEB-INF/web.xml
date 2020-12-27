@@ -19,5 +19,13 @@
         <servlet-name>CategoriesServlet</servlet-name>
         <url-pattern>/catlist</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>testservlet</servlet-name>
+        <servlet-class>main.java.Servlets.Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>testservlet</servlet-name>
+        <url-pattern>/connection</url-pattern>
+    </servlet-mapping>
 
 </web-app>

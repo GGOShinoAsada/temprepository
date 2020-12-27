@@ -1,53 +1,60 @@
 package main.java.DAO;
 
-import org.bson.Document;
 
+import java.util.Date;
 
-public class Category extends Document {
+public class Category {
 
-    private int id;
-    private String name;
-    private String description;
-    private double rating;
+    private int Id;
+    private String Name;
+    private String Description;
+    private double Rating;
+    public Date date;
+    public void setRating(double r){
+        Rating=r;
+    }
+    public void setDate(Date d){
+        date=d;
+    }
+    public Date getDate() {
+        date = new Date();
+        return date;
+    }
+
+    public double getRating(){
+        return Rating;
+    }
     public void setId(int _id){
-        id = _id;
+        Id=_id;
+    }
+    public void setName(String n){
+        Name=n;
+    }
+    public void setDescription(String d){
+        Description=d;
     }
     public int getId(){
-        return id;
+        return Id;
     }
-    public void setName(String _name){
-        name=_name;
-    }
-    public String getName(){
-        return name;
-    }
-    public void setDescription(String des){
-        description=des;
+    public String getName()
+    {
+        return Name;
     }
     public String getDescription(){
-        return description;
+        return Description;
     }
-    public void setRating(double _rating){
-        rating=_rating;
+    public  Category(int _id, String n, String d, double r){
+        Id=_id;
+        Name=n;
+        Description=d;
+        Rating=r;
+        date=new Date();
     }
-    public double getRating(){
-        return rating;
+    public Category(String n, String d, double r){
+        Name=n;
+        Description=d;
+        Rating=r;
+        date=new Date();
     }
-    public Category(){
-        id=Integer.MIN_VALUE;
-        name=null;
-        description=null;
-        rating=0;
-    }
-    public Category(String _name, String des, double rat){
-        name=_name;
-        description=des;
-        rating=rat;
-    }
-    public Category(int id, String _name, String des, double rat){
-        id=id;
-        name=_name;
-        description=des;
-        rating=rat;
-    }
+    public Category(){}
 }

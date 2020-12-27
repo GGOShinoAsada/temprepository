@@ -1,7 +1,5 @@
-package main.java.com.company;
+package main.java.com.company.DAO;
 
-
-import com.mysql.cj.result.SqlDateValueFactory;
 
 import java.sql.*;
 
@@ -13,6 +11,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Context {
+
     private class ConnectInfo{
         private String dbname="computerstore";
         private  String username = "root";
@@ -141,11 +140,16 @@ public class Context {
     public boolean updateCategory(int id, Category cat){
         boolean f = true;
         try{
-            query="update categories set name=%s, description=%s, rating=%f, additionaldate=%t where id=%d";
+            query="update categories set name=?, description=?, rating=?, additionaldate=? where id=?";
             ConnectInfo info = new ConnectInfo();
             connection=DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
-            statement=connection.createStatement();
-            if (statement.executeUpdate(String.format(query,"\""+cat.getName()+"\"","\""+cat.getDescription()+"\"",cat.getRating(),cat.getDate(),id))>0){
+            dynamicstatement=connection.prepareStatement(query);
+            dynamicstatement.setString(1,cat.getName());
+            dynamicstatement.setString(2,cat.getDescription());
+            dynamicstatement.setDouble(3,cat.getRating());
+            dynamicstatement.setDate(4,convertToSqlDate(cat.getDate()));
+            dynamicstatement.setInt(5,id);
+            if (dynamicstatement.executeUpdate()>0){
                System.out.println("updating successful");
             }
             else {
@@ -222,11 +226,17 @@ public class Context {
             ConnectInfo info = new ConnectInfo();
 
             connection=DriverManager.getConnection(info.getConnectionString(), info.getUsername(),info.getPassword());
-            query="insert into categories (name, description, rating, additionaldate) values (%s, %s, %f, %T)";
-            statement=connection.createStatement();
-           query=String.format(query,"\""+t.getName()+"\"","\""+t.getDescription()+"\"", t.getRating(), convertToSqlDate(t.getDate()));
+            //query="insert into categories (name, description, rating, additionaldate) values (%s, %s, %f, %T)";
+            query="insert into categories ( name, description, rating, additionaldate) values (?,?,?,?)";
+
+            dynamicstatement=connection.prepareStatement(query);
+            dynamicstatement.setString(1,t.getName());
+            dynamicstatement.setString(2,t.getDescription());
+            dynamicstatement.setDouble(3,t.getRating());
+            dynamicstatement.setDate(4,convertToSqlDate(t.getDate()));
+
            System.out.println(query);
-            if (statement.executeUpdate(query)>0){
+            if (dynamicstatement.executeUpdate()>0){
 
                 System.out.println("adding successful");
             }
@@ -237,7 +247,7 @@ public class Context {
         catch (SQLException ex){
             try{
                 connection.close();
-                statement.close();
+                dynamicstatement.close();
                 f=false;
                 ex.printStackTrace();
             }
@@ -247,7 +257,7 @@ public class Context {
             finally {
                 try{
                     connection.close();
-                    statement.close();
+                    dynamicstatement.close();
                 }
                 catch (SQLException ex1){
                     ex1.printStackTrace();
@@ -260,9 +270,11 @@ public class Context {
     }
     public Category searchCategory(String name, String desc, double rat){
         List<Category> categories = getAllCategories();
-        Category category = null;
+        //System.out.println(categories.size());
+        Category category = new Category();
         for (Category c: categories){
-            if (c.getName()==name && c.getDescription()==desc && c.getRating()==rat){
+            if (c.getName().equalsIgnoreCase(name) && c.getDescription().equalsIgnoreCase(desc) && c.getRating()==rat){
+              // System.out.println(c.getId());
                 category.setId(c.getId());
                 category.setName(c.getName());
                 category.setRating(c.getRating());

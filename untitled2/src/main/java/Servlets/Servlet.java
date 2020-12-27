@@ -1,5 +1,7 @@
 package main.java.Servlets;
 
+import main.java.DAO.Context;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -18,13 +20,8 @@ public class Servlet extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         PrintWriter writer = response.getWriter();
-        writer.println("<html>");
-        writer.println("<head>");
-        writer.println("<title>aaa</title>");
-        writer.println("</head>");
-        writer.println("<body>");
-        writer.println("<h1>hhhh</h1>");
-        writer.println("</body>");
-        writer.println("</html>");
+        Context context = new Context();
+        String c = context.isconnectionSuccessfull()?"successful" :"failed";
+        writer.println(c);
     }
 }

@@ -1,4 +1,4 @@
-package main.java.com.company;
+package main.java.com.company.DAO;
 
 import java.security.spec.NamedParameterSpec;
 import java.util.Date;
@@ -55,4 +55,5 @@ public class Category {
         Rating=r;
         date=new Date();
     }
+    public Category(){}
 }

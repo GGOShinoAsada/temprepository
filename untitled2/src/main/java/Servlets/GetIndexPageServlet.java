@@ -25,7 +25,7 @@ public class GetIndexPageServlet extends HttpServlet {
         //add all users
         Categories = new CopyOnWriteArrayList<>();
         try{
-            Categories = context.getallcategories();
+            Categories = context.getAllCategories();
         }
         catch (Exception ex){
             System.out.println(ex.getMessage());
@@ -35,33 +35,34 @@ public class GetIndexPageServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
-        req.setAttribute("categories",Categories);
+        req.setAttribute("Categories",Categories);
         req.getRequestDispatcher(index).forward(req,resp);
     }
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         request.setCharacterEncoding("UTF-8");
-       /* if (!requestIsValid(request)) {
-            doGet(request, response);
-        }*/
 
-        final String name = request.getParameter("name");
-        final String  description = request.getParameter("description");
+
+        final String name = request.getParameter("Name");
+        final String  description = request.getParameter("Description");
         double rating = -1;
         try{
-             rating = Double.parseDouble(request.getParameter("rating"));
+             rating = Double.parseDouble(request.getParameter("Rating"));
         }
         catch (ClassCastException ex){
-            System.out.println("rating "+ex.getMessage());
+            System.out.println(ex.getMessage());
         }
+
         //check values
 
         final Category category = new Category(name, description, rating);
 
-        boolean issuc = context.isconnectsuccessful();
+        boolean issuc = context.isconnectionSuccessfull();
+
         System.out.println("CONNECTION SUCCESSFUL: "+issuc);
         try{
            context.addCategory(category);
+           Categories.add(category);
         }
         catch (Exception ex){
            ex.printStackTrace();

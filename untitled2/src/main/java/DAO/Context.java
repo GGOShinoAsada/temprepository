@@ -1,5 +1,6 @@
 package main.java.DAO;
 
+import java.lang.reflect.InvocationTargetException;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.*;
@@ -7,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Context {
-    private class ConnectionProperties {
+   /* private class ConnectionProperties {
         private  String DatabaseName = "ComputerStore";
         private  String UserName = "root";
         private  String Password = "0000";
@@ -34,215 +35,303 @@ public class Context {
         public String getConnectionString(){
             return "jdbc:mysql://localhost:3306/"+ DatabaseName +"?useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
         }
-    }
+    }*/
+    private class ConnectInfo{
+       private String dbname="computerstore";
+       private  String username = "root";
+       private  String password="0000";
+       public String getConnectionString(){
+           //jdbc:mysql://localhost:3306/computerstore
+           return "jdbc:mysql://localhost:3306/"+dbname+"?serverTimezone=UTC&useSSL=false";
+       }
+       public String getUsername(){
+           return  username;
+       }
+       public String getPassword(){
+           return  password;
+       }
 
-    private ConnectionProperties connection;
-    private Connection MyDbConnection;
-    private Statement StaticStatement;
-    private PreparedStatement DynamicStatement;
+   }
+    private Connection connection;
+    private Statement statement;
+    private PreparedStatement dynamicstatement;
     private ResultSet result;
-    private String query;
-    /*
-    add category into database
-     */
-    public  boolean addCategory(Category cat){
-        boolean issuc = true;
-        ConnectionProperties prop = new ConnectionProperties();
+    String query;
+    public boolean isconnectionSuccessfull(){
+        boolean a = true;
+        ConnectInfo info = new ConnectInfo();
+        connection = null;
         try{
-            MyDbConnection = DriverManager.getConnection(prop.getConnectionString(),prop.getUserName(),prop.getPassword());
-            query = "insert into categories (name, description, rating) values (?,?,?)";
-            DynamicStatement = MyDbConnection.prepareStatement(query);
-            DynamicStatement.setString(1,cat.getName());
-            DynamicStatement.setString(2,cat.getDescription());
-            DynamicStatement.setDouble(3,cat.getRating());
-            issuc = DynamicStatement.executeUpdate()>0;
-            System.out.println(issuc);
-        } catch (SQLException e) {
-            try {
-                MyDbConnection.close();
-                DynamicStatement.close();
-                issuc=false;
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
+            connection = DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
+        }
+        catch (SQLException ex){
+            a=false;
+            ex.printStackTrace();
+
+        }
+        catch (ClassNotFoundException ex){
+            a=false;
+            ex.printStackTrace();
+        }
+        catch (NoSuchMethodException ex){
+            ex.printStackTrace();
+        }
+
+        catch (IllegalAccessException e) {
+            a=false;
+            e.printStackTrace();
+        } catch (InstantiationException e) {
+            a=false;
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            a=false;
+            e.printStackTrace();
+        } finally {
+            try{
+                connection.close();
             }
-            catch (SQLException ex) {
+            catch (SQLException ex){
                 ex.printStackTrace();
             }
         }
-        finally {
-            try{
-                DynamicStatement.close();
-                MyDbConnection.close();
-
-            }
-            catch (SQLException ex1){
-                issuc=false;
-            }
-            catch (Exception ex2){
-
-            }
-        }
-        return issuc;
+        return a;
     }
-    /*
-    removing category
-     */
-    public boolean removeCategory(int id){
-        boolean rez = true;
-        query = "delete from categories where id=?";
-        ConnectionProperties properties = new ConnectionProperties();
-        //Category cat = new Category();
-        try{
-            MyDbConnection = DriverManager.getConnection(properties.getConnectionString(),properties.getUserName(),properties.getPassword());
-            System.out.println(properties.getConnectionString());
-            DynamicStatement = MyDbConnection.prepareStatement(query);
-            DynamicStatement.setInt(1,id);
 
-            rez = DynamicStatement.executeUpdate()>0;
+    public List<Category> getAllCategories() {
+        ConnectInfo info = new ConnectInfo();
+        List<Category> categories = new ArrayList();
+        try {
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
+            connection = DriverManager.getConnection(info.getConnectionString(), info.getUsername(), info.getPassword());
+            query = "select * from categories";
+            statement = connection.createStatement();
+            result = statement.executeQuery(query);
+            while (result.next()) {
+                int id = result.getInt("id");
+                String name = result.getString("name");
+                String description = result.getString("Description");
+                double rat = result.getDouble("rating");
+                Date d = result.getDate("additionaldate");
+                Category cat = new Category(id, name, description, rat);
+                categories.add(cat);
+            }
+        } catch (SQLException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex) {
+            try {
+                result.close();
+                statement.close();
+                connection.close();
+                ex.printStackTrace();
+            } catch (SQLException ex1) {
+                ex1.printStackTrace();
+            } catch (Exception ex2) {
+                ex2.printStackTrace();
+            }
+        } finally {
+            try {
+                result.close();
+                statement.close();
+                connection.close();
+            } catch (SQLException ex) {
+                ex.printStackTrace();
+            }
         }
-        catch (SQLException ex){
-            try{
-                DynamicStatement.close();
-                MyDbConnection.close();
-            }
-            catch (SQLException ex1){
-
-            }
-        }
-        finally {
-            try{
-                DynamicStatement.close();
-                MyDbConnection.close();
-            }
-            catch (SQLException ex2){
-
-            }
-        }
-        return rez;
+        return categories;
     }
-    /*
-    searching category by id
-     */
-    public Category getcategorybyid(int id){
-
-        Category catsearch = new Category();
-        ConnectionProperties properties = new ConnectionProperties();
+    public  Category getCategoryById(int id){
+        query="select name, description, rating, additionaldate from categories where id=%d";
+        Category cat=null;
+        ConnectInfo info = new ConnectInfo();
         try{
-            MyDbConnection = DriverManager.getConnection(properties.getConnectionString(),properties.getUserName(),properties.getPassword());
-            query = "select name, description, rating from categories where id=?";
-            DynamicStatement = MyDbConnection.prepareStatement(query);
-            DynamicStatement.setInt(1,id);
-            result = DynamicStatement.executeQuery();
-
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
+            connection=DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
+            statement=connection.createStatement();
+            result=statement.executeQuery(String.format(query,id));
             while (result.next()){
-                String name = result.getString(1);
-                String des = result.getString(2);
-                double rat = result.getDouble(3);
-                catsearch = new Category(name,des,rat);
+                String n = result.getString("name");
+                String d=result.getString("description");
+                double r = result.getDouble("rating");
+                Date date = result.getDate("additionaldate");
+                cat=new Category(id, n,d,r);
             }
-            if (catsearch.getId()>0){
-                System.out.println("Category find");
+        }
+        catch (SQLException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex){
+            try {
+                System.out.println("trying ro get data from database is failed..");
+                connection.close();
+                statement.close();
+                result.close();
+            }
+            catch (SQLException ex1){
+                ex1.printStackTrace();
+            }
+        }
+        finally {
+            try{
+                connection.close();
+                result.close();
+                statement.close();
+            }
+            catch (SQLException ex1){
+                ex1.printStackTrace();
+            }
+        }
+        return  cat;
+    }
+    public boolean updateCategory(int id, Category cat){
+        boolean f = true;
+        try{
+            query="update categories set name=?, description=?, rating=?, additionaldate=? where id=?";
+            ConnectInfo info = new ConnectInfo();
+            connection=DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
+            dynamicstatement=connection.prepareStatement(query);
+            dynamicstatement.setString(1,cat.getName());
+            dynamicstatement.setString(2,cat.getDescription());
+            dynamicstatement.setDouble(3,cat.getRating());
+            dynamicstatement.setDate(4,convertToSqlDate(cat.getDate()));
+            dynamicstatement.setInt(5,id);
+            if (dynamicstatement.executeUpdate()>0){
+                System.out.println("updating successful");
             }
             else {
-                System.out.println("category was not found");
+                System.out.println("updating failed");
+                f=false;
             }
         }
         catch (SQLException ex){
-            try{
-                MyDbConnection.close();
-                result.close();
-                DynamicStatement.close();
+            try {
+                ex.printStackTrace();
+                statement.close();
+                connection.close();
             }
             catch (SQLException ex1){
-                //throw someone Ex
+                ex1.printStackTrace();
             }
         }
         finally {
-            try{
-                result.close();
-                DynamicStatement.close();
-                MyDbConnection.close();
-            }
-            catch (SQLException ex2){
-                //throw someone ex
-            }
-        }
-        return catsearch;
-    }
-    /*
-    updating category
-     */
-    public boolean updatecategory(Category cat){
-        boolean rez = false;
-        ConnectionProperties properties = new ConnectionProperties();
-        query = "update categories set name=?, description=?,rating=? where id=?";
-        try{
-            MyDbConnection = DriverManager.getConnection(properties.getConnectionString(),properties.getUserName(),properties.getPassword());
-            DynamicStatement = MyDbConnection.prepareStatement(query);
-            DynamicStatement.setString(1,cat.getName());
-            DynamicStatement.setString(2,cat.getDescription());
-            DynamicStatement.setDouble(3,cat.getRating());
-            DynamicStatement.setInt(4,cat.getId());
-            rez=DynamicStatement.executeUpdate()>0;
-        }
-        catch (SQLException e) {
             try {
-                DynamicStatement.close();
-                MyDbConnection.close();
+                statement.close();
+                connection.close();
             }
-            catch (SQLException ex){
+            catch (SQLException ex1){
+                ex1.printStackTrace();
+            }
+        }
+        return f;
+    }
+    public  boolean removeCategory(Category cat){
+        boolean f = true;
+        try {
+
+
+            query="delete from categories where id=%d";
+
+            ConnectInfo info = new ConnectInfo();
+            connection = DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
+            statement=connection.createStatement();
+            if (statement.executeUpdate(String.format(query,cat.getId()))>0){
+                System.out.println("removing successful");
+            }
+            else {
+                f=false;
+                System.out.println("removing failed");
+            }
+        }
+        catch (SQLException ex){
+            try {
+                connection.close();
+                statement.close();
+                ex.printStackTrace();
+                f=false;
+            }
+            catch (SQLException ex1){
+                ex1.printStackTrace();
+            }
+        }
+        finally {
+            try {
+                connection.close();
+                statement.close();
+
 
             }
-        }
-        finally {
-            try{
-                MyDbConnection.close();
-                DynamicStatement.close();
-            }
-            catch (SQLException ex){
-                //do something here
+            catch (SQLException ex1){
+                ex1.printStackTrace();
             }
         }
-        return rez;
+        return f;
     }
-    /*
-    get all categories
-     */
-    public List<Category> getallcategories(){
-        List<Category> Categories = new ArrayList<>();
-        query = "select name, description, rating from categories";
-        ConnectionProperties properties = new ConnectionProperties();
-        try {
-            MyDbConnection = DriverManager.getConnection(properties.getConnectionString(),properties.getUserName(),properties.getPassword());
-            StaticStatement = MyDbConnection.createStatement();
-            result= StaticStatement.executeQuery(query);
-            while (result.next()){
-                String name = result.getString(1);
-                String description = result.getString(2);
-                double rating = result.getDouble(3);
-                Categories.add(new Category(name, description,rating));
-            }
-        }
-        catch (SQLException ex){
-            try {
-                MyDbConnection.close();
-                StaticStatement.close();
-                result.close();
-            }
-            catch (SQLException ex2){
-                //do something here
-            }
-        }
-        return Categories;
-    }
-    public boolean isconnectsuccessful(){
-        boolean issucc = true;
-        ConnectionProperties properties = new ConnectionProperties();
+    public boolean addCategory(Category t){
+        boolean f=true;
         try{
-            MyDbConnection= DriverManager.getConnection("jdbc:mysql:3306//localhost/computerstore?useSSL=false;useUnicode=true;useJDBCCompliantTimezoneShift=true;useLegacyDatetimeCode=false;serverTimezone=UTC","root","0000");
+            ConnectInfo info = new ConnectInfo();
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
+            connection=DriverManager.getConnection(info.getConnectionString(), info.getUsername(),info.getPassword());
+            //query="insert into categories (name, description, rating, additionaldate) values (%s, %s, %f, %T)";
+            query="insert into categories ( name, description, rating, additionaldate) values (?,?,?,?)";
+
+            dynamicstatement=connection.prepareStatement(query);
+            dynamicstatement.setString(1,t.getName());
+            dynamicstatement.setString(2,t.getDescription());
+            dynamicstatement.setDouble(3,t.getRating());
+            dynamicstatement.setDate(4,convertToSqlDate(t.getDate()));
+
+            System.out.println(query);
+            if (dynamicstatement.executeUpdate()>0){
+
+                System.out.println("adding successful");
+            }
+            else {
+                System.out.println("adding failed");
+            }
         }
         catch (SQLException ex){
-            issucc=false;
+            try{
+                connection.close();
+                dynamicstatement.close();
+                f=false;
+                ex.printStackTrace();
+            }
+            catch (SQLException ex1){
+                ex1.printStackTrace();
+            }
+            finally {
+                try{
+                    connection.close();
+                    dynamicstatement.close();
+                }
+                catch (SQLException ex1){
+                    ex1.printStackTrace();
+                }
+
+            }
+
+        }
+        catch ( ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex){
             ex.printStackTrace();
         }
-        return issucc;
+        return f;
+    }
+    public Category searchCategory(String name, String desc, double rat){
+        List<Category> categories = getAllCategories();
+        //System.out.println(categories.size());
+        Category category = new Category();
+        for (Category c: categories){
+            if (c.getName().equalsIgnoreCase(name) && c.getDescription().equalsIgnoreCase(desc) && c.getRating()==rat){
+                // System.out.println(c.getId());
+                category.setId(c.getId());
+                category.setName(c.getName());
+                category.setRating(c.getRating());
+                category.setDate(c.getDate());
+                category.setDescription(c.getDescription());
+            }
+        }
+        return category;
+    }
+    public java.sql.Date convertToSqlDate(java.util.Date d){
+        java.sql.Date date=new java.sql.Date(d.getTime());
+        return  date;
     }
 }
+
+
