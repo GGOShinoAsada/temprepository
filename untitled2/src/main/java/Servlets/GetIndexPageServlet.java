@@ -41,44 +41,50 @@ public class GetIndexPageServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
         request.setCharacterEncoding("UTF-8");
-
-
-        final String name = request.getParameter("Name");
-        final String  description = request.getParameter("Description");
-        double rating = -1;
-        try{
-             rating = Double.parseDouble(request.getParameter("Rating"));
+        if (!requestIsValid(request)){
+            doGet(request,response);
         }
-        catch (ClassCastException ex){
-            System.out.println(ex.getMessage());
+        else {
+            final String name = request.getParameter("Name");
+            final String  description = request.getParameter("Description");
+            double rating = -1;
+            try{
+                rating = Double.parseDouble(request.getParameter("Rating"));
+            }
+            catch (ClassCastException ex){
+                System.out.println(ex.getMessage());
+            }
+
+
+
+            final Category category = new Category(name, description, rating);
+
+            boolean issuc = context.isconnectionSuccessfull();
+
+            System.out.println("CONNECTION SUCCESSFUL: "+issuc);
+            try{
+                context.addCategory(category);
+                Categories.add(category);
+            }
+            catch (Exception ex){
+                ex.printStackTrace();
+            }
+
+            doGet(request, response);
         }
 
-        //check values
 
-        final Category category = new Category(name, description, rating);
-
-        boolean issuc = context.isconnectionSuccessfull();
-
-        System.out.println("CONNECTION SUCCESSFUL: "+issuc);
-        try{
-           context.addCategory(category);
-           Categories.add(category);
-        }
-        catch (Exception ex){
-           ex.printStackTrace();
-        }
-
-        doGet(request, response);
 
     }
     private boolean requestIsValid(final HttpServletRequest req) {
 
-        final String name = req.getParameter("name");
-        final String age = req.getParameter("age");
+        final String name = req.getParameter("Name");
+        final String description = req.getParameter("Description");
+        final  double rating = Double.parseDouble(req.getParameter("Rating"));
 
         return name != null && name.length() > 0 &&
-                age != null && age.length() > 0 &&
-                age.matches("[+]?\\d+");
+                description != null && description.length() > 0 &&
+                rating>0;
     }
     protected void printvalies (Category cat){
         System.out.println("Name"+cat.getName());

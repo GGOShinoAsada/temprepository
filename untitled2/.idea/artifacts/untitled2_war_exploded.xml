@@ -15,6 +15,7 @@
           <element id="library" level="project" name="org.mongodb:mongo-java-driver:2.1" />
           <element id="library" level="project" name="lib1" />
           <element id="library" level="project" name="mongo-java-driver-2.1" />
+          <element id="library" level="project" name="junit:junit:4.12" />
         </element>
       </element>
     </root>

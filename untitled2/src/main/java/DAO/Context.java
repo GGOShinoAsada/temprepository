@@ -102,7 +102,7 @@ public class Context {
         ConnectInfo info = new ConnectInfo();
         List<Category> categories = new ArrayList();
         try {
-            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
+            Class.forName("com.mysql.cj.jdbc.Driver").getDeclaredConstructor().newInstance();
             connection = DriverManager.getConnection(info.getConnectionString(), info.getUsername(), info.getPassword());
             query = "select * from categories";
             statement = connection.createStatement();
@@ -183,6 +183,7 @@ public class Context {
         try{
             query="update categories set name=?, description=?, rating=?, additionaldate=? where id=?";
             ConnectInfo info = new ConnectInfo();
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
             connection=DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
             dynamicstatement=connection.prepareStatement(query);
             dynamicstatement.setString(1,cat.getName());
@@ -198,7 +199,7 @@ public class Context {
                 f=false;
             }
         }
-        catch (SQLException ex){
+        catch (SQLException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex){
             try {
                 ex.printStackTrace();
                 statement.close();
@@ -227,6 +228,7 @@ public class Context {
             query="delete from categories where id=%d";
 
             ConnectInfo info = new ConnectInfo();
+            Class.forName("com.mysql.jdbc.Driver").getDeclaredConstructor().newInstance();
             connection = DriverManager.getConnection(info.getConnectionString(),info.getUsername(),info.getPassword());
             statement=connection.createStatement();
             if (statement.executeUpdate(String.format(query,cat.getId()))>0){
@@ -237,7 +239,7 @@ public class Context {
                 System.out.println("removing failed");
             }
         }
-        catch (SQLException ex){
+        catch (SQLException | ClassNotFoundException | NoSuchMethodException | InstantiationException | IllegalAccessException | InvocationTargetException ex){
             try {
                 connection.close();
                 statement.close();

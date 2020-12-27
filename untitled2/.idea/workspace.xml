@@ -7,64 +7,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="189af51a-e888-45f9-bc83-aefa3e28e39b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/production/untitled4/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/production/untitled4/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/out/production/untitled4/production/untitled4/production/untitled4/production/untitled4/production/untitled4/artifacts/untitled4_war_exploded/WEB-INF/classes/untitled4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Servlets/IndexPageServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/ContextTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../untitled" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/a37974b3-85de-4766-9b25-f2184b84623d.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/untitled2_war_exploded.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context$ConnectionProperties.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/DAO/Context.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/main/java/Servlets/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Category.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Category.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context$ConnectionProperties.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/untitled2_war_exploded/WEB-INF/classes/untitled2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/DAO/Context.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/GetIndexPageServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/Servlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/main/java/Servlets/Servlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/untitled2/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/untitled2/untitled2.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/DAO/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DAO/Context.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/GetIndexPageServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Servlets/Servlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Servlets/Servlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled4/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/DAO/Category.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Context.java" beforeDir="false" afterPath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/DAO/Context.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../untitled4/src/main/java/com/company/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/untitled2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +81,7 @@
         <option value="Class" />
         <option value="jsf" />
         <option value="Jsp File" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -167,21 +123,31 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/DAO" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/java" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="main.java.DAO" />
+    </key>
     <key name="ExtractSuperBase.RECENT_KEYS">
       <recent name="main.java.Servlets" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -196,7 +162,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 8.5.60">
+  <component name="RunManager" selected="JUnit.Unnamed">
+    <configuration name="Unnamed" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="untitled2" />
+      <option name="PACKAGE_NAME" value="test.java" />
+      <option name="MAIN_CLASS_NAME" value="test.java.ContextTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="untitled2 [package]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -296,6 +274,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.Unnamed" />
       <item itemvalue="Maven.untitled2 [package]" />
       <item itemvalue="Tomcat Server.Tomcat 8.5.60" />
     </list>
@@ -327,7 +306,7 @@
       <workItem from="1609024459029" duration="1091000" />
       <workItem from="1609025929248" duration="268000" />
       <workItem from="1609026407266" duration="1316000" />
-      <workItem from="1609056423119" duration="4106000" />
+      <workItem from="1609056423119" duration="13330000" />
     </task>
     <task id="LOCAL-00001" summary="start state">
       <created>1607713397963</created>
@@ -336,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607713397963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="database context addition is successful">
+      <created>1609060725493</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1609060725493</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -357,6 +343,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start state" />
-    <option name="LAST_COMMIT_MESSAGE" value="start state" />
+    <MESSAGE value="database context addition is successful" />
+    <option name="LAST_COMMIT_MESSAGE" value="database context addition is successful" />
   </component>
 </project>
